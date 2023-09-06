@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1DDDD"
+    app:layoutDescription="@xml/activity_principal_page_scene"
+    tools:context=".PrincipalPageActivity">
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-1778393545986901/4551774244"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/contenedor_superior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="86dp">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icono"
+            android:layout_margin="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/adView"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+        <Button
+            android:id="@+id/button_proceso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/botonprogreso"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Comienza a aprender desde yá"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="@+id/adView"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_products"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_temas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/contenedor_superior"
+        tools:layout_editor_absoluteX="0dp"></androidx.recyclerview.widget.RecyclerView>
+    
+    <ImageView
+        android:id="@+id/btn_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_opensheet"
+        android:background="#ffffff"/>
+    
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

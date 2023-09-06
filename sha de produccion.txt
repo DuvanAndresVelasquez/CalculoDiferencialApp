@@ -1,0 +1,2 @@
+keytool -list -v -alias key0 -keystore C:\Users\Marcela\integralkey.jks
+9B:D8:79:A7:0F:00:3D:E9:C1:EA:29:2A:83:1A:A0:D9:D6:8B:8A:20

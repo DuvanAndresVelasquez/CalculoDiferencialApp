@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "512980972965",
+    "project_id": "diferencial-7772b",
+    "storage_bucket": "diferencial-7772b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512980972965:android:8b3f09b6692deec5fe644c",
+        "android_client_info": {
+          "package_name": "com.smeagtechnology.diferencial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512980972965-d22d6jo52v9bs3830l7ggkakgfh5v1q3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.smeagtechnology.diferencial",
+            "certificate_hash": "c504078a9f4d8581318cc35f86ab0fdb426babae"
+          }
+        },
+        {
+          "client_id": "512980972965-b5p2bk7r7g77niute8e2n17dcd1imgh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo8exPbuN3MmX5PqO6l0qK0HKbaAH2NwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512980972965-b5p2bk7r7g77niute8e2n17dcd1imgh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

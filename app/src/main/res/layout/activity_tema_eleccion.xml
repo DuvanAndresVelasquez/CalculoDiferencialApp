@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layoutDescription="@xml/activity_tema_eleccion_scene"
+    tools:context=".TemaEleccionActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewTema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-1778393545986901/4971055574"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_parrafos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adViewTema" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_parrafos"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progress="25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No hay contenido para este tema en este momento, es posible que en los proximos minutos se haya terminado."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button_entendido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/botonprogreso"
+        android:drawableEnd="@drawable/ic_action_check"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

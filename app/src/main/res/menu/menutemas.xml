@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item android:id="@+id/action_search"
+        android:title="Search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+    <item android:id="@+id/action_refresh"
+        android:title="Refresh"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_refresh" />
+    <item android:id="@+id/action_datos"
+        android:title="Tus datos"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_refresh" />
+    <item android:id="@+id/action_salir"
+        android:title="Cerrar Sesión"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_refresh" />
+    <item android:id="@+id/action_apps"
+        android:title="Más apps"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_refresh" />
+    <item android:id="@+id/action_calificar"
+        android:title="Califica esta app"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_action_refresh" />
+</menu>

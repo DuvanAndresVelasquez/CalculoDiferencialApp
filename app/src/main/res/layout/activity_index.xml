@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3BCB2B2"
+    tools:context=".IndexActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fondodosregistrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fondounoregistrar"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fondotresregistrar"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/mensaje"
+                android:padding="10dp"
+                android:text="Registra tus datos para que puedas acceder desde cualquier dispositivo, así continuarás tu progreso de aprendizaje sin perder ni un segundo"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edittext_nombre"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/ic_action_textnormal"
+                android:hint="  Nombre"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/edittext_correo"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/ic_action_email"
+                android:hint="  Correo"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btn_registrar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/botonregistrar"
+                android:text="Registrar"
+                android:textColor="#ffffff" />
+            <Button
+                android:id="@+id/btn_google"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/botongoogle"
+                android:text="Ingresa con Google"
+                android:paddingStart="20dp"
+                android:drawableStart="@drawable/ic_action_google"
+                android:textColor="#EA1B1B" />
+
+
+            <ProgressBar
+                android:id="@+id/progressbar_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

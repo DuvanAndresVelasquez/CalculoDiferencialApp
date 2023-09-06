@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosActivity"
+    android:background="@color/colorPrimary">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/mensaje"
+            android:padding="20dp"
+            android:text="Estos son los datos que necesita esta aplicación para manejar los procesos."
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre de usuario"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/textview_nombreusuario"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/edittext"
+            android:text="Nombre de Usuario"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Correo "
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/textview_correousuario"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext"
+            android:text="Correo de Usuario"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
